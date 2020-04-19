@@ -29,7 +29,12 @@ function reverse3(str) {
   return str.split("").reverse().join("");
 }
 
+// method4 - using arrow function
+const reverse4 = (str) => str.split("").reverse().join("");
+
 console.log(reverse("Hi my name is Jhon"));
 console.log(reverse2("Hi my name is Jhon"));
 console.log(reverse3("Hi my name is Jhon"));
 console.log(reverse3());
+console.log(reverse4("Hi my name is Jhon"));
+//console.log(reverse4()); -cannot validate we have to create a function for that
