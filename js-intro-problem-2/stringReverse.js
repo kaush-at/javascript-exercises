@@ -21,6 +21,15 @@ function reverse2(str) {
   return revArr.join("");
 }
 
-console.log(reverse("Hi my name is Jhon"));
+// method3
+function reverse3(str) {
+  if (!str || str.length < 2 || typeof str !== "string") {
+    return "That is not a good string ";
+  }
+  return str.split("").reverse().join("");
+}
 
+console.log(reverse("Hi my name is Jhon"));
 console.log(reverse2("Hi my name is Jhon"));
+console.log(reverse3("Hi my name is Jhon"));
+console.log(reverse3());
