@@ -42,3 +42,39 @@ console.log(minb(7,5));
 
 //------------------------------------------------------------------------------
 
+// 06).maxb(a, b) ⇒ number
+// Write a binary function maxb that takes two numbers and returns the larger one
+
+maxb = (a,b) => a > b ? a : b;
+console.log(maxb(2, 5));
+console.log(maxb(7, 5));
+
+//------------------------------------------------------------------------------
+
+// 07).add(...nums) ⇒ number
+// Write a function add that is generalized for any amount of arguments
+
+add = (...nums) => nums.reduce((total, number) => {
+    return total + number
+});
+console.log(add(1,2,3,4,5));
+
+//------------------------------------------------------------------------------
+
+// 08).sub(...nums) ⇒ number
+// Write a function sub that is generalized for any amount of arguments
+sub = (...nums) => nums.reduce((answr, number)=>{
+    return  answr - number ;
+});
+console.log(sub(1,2,3,4));
+
+//------------------------------------------------------------------------------
+
+// 09).mul(...nums) ⇒ number
+// Write a function mul that is generalized for any amount of arguments
+mul= (...nums) => nums.reduce((answr, number) =>{
+    return answr * number;
+});
+console.log(mul(1, 2, 3, 4));
+
+//------------------------------------------------------------------------------
