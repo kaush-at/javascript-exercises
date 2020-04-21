@@ -21,5 +21,5 @@ function mergeSortedArrays(arr1, arr2) {
     }
   }
   return mergedArry;
-}
+} 
 console.log(mergeSortedArrays([0, 3, 4, 31], [3, 4, 6, 30]));
