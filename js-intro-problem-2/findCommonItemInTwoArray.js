@@ -53,3 +53,11 @@ function containsCommonItem2(arr1, arr2) {
       map[item] = true;
     }
   }
+  // loop through second array and check if item in second array exists on created object.
+  for (let j = 0; j < arr2.length; j++) {
+    if (map[arr2[j]]) {
+      return true;
+    }
+  }
+  return false;
+}
