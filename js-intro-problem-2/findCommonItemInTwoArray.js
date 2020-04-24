@@ -40,3 +40,16 @@ function containsCommonItem(arr1, arr2) {
   return false;
 }
 
+//-------another good approach-----
+
+function containsCommonItem2(arr1, arr2) {
+  // loop through first array and create object where properties === items in the array
+  // can we assume always 2 params?
+
+  let map = {};
+  for (let i = 0; i < arr1.length; i++) {
+    if (!map[arr1[i]]) {
+      const item = arr1[i];
+      map[item] = true;
+    }
+  }
