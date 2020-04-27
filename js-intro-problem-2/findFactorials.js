@@ -26,5 +26,16 @@ function findFactorialIteratively2(number) {
   return answer;
 }
 
+//recursive function added
+function findFactorialRecursively(number) {
+  let answer = number;
+  if (number - 1 <= 0) {
+    return answer;
+  }
+  answer = number * findFactorialRecursively(number - 1);
+  return answer;
+}
+
 console.log(findFactorialIteratively1(5));
 console.log(findFactorialIteratively2(5));
+console.log(findFactorialRecursively(5));
