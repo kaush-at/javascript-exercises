@@ -36,6 +36,15 @@ function findFactorialRecursively(number) {
   return answer;
 }
 
+//with some changes
+function factorialsRecursively(number) {
+  if (number <= 2) {
+    return number;
+  }
+  return number * findFactorialRecursively(number - 1);
+}
+
 console.log(findFactorialIteratively1(5));
 console.log(findFactorialIteratively2(5));
 console.log(findFactorialRecursively(5));
+console.log(factorialsRecursively(5));
