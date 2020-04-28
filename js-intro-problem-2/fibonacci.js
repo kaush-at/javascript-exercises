@@ -14,4 +14,14 @@ function fibonacciIterative(n) {
   return fibArr[n];
 }
 
+// recursive method 
+function fibonacciRecursive(n) {
+  // exponential time (2^n) - every additional element in the fibbonaci sequence we get an increase in function  calls
+  if (n < 2) {
+    return n;
+  }
+  return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+}
+
+console.log(fibonacciRecursive(3));
 console.log(fibonacciIterative(3));
