@@ -26,7 +26,34 @@ function fizzBuzz(n) {
   }
 }
 
+// another solution using switch statement
+function fizzBuzz2(n) {
+  for (let i = 1; i <= n; i++) {
+    switch (true) {
+      case i % 3 === 0 && i % 5 === 0:
+        console.log("fizzbuzz");
+        break;
+
+      case i % 3 === 0:
+        console.log("fizz");
+        break;
+
+      case i % 5 === 0:
+        console.log("buzz");
+        break;
+
+      default:
+        console.log(i);
+    }
+  }
+}
+
 console.log(fizzBuzz(5)); // buzz
 console.log(fizzBuzz(2)); // 2
 console.log(fizzBuzz(3)); // fizz
 console.log(fizzBuzz(15)); // fizzbuzz
+
+console.log(fizzBuzz2(5)); // buzz
+console.log(fizzBuzz2(2)); // 2
+console.log(fizzBuzz2(3)); // fizz
+console.log(fizzBuzz2(15)); // fizzbuzz
